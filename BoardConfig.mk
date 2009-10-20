@@ -10,7 +10,8 @@ BOARD_WLAN_TI_STA_DK_ROOT := system/wlan/ti/sta_dk_4_0_4_32
 
 # Kernel/Bootloader machine name
 #
-TARGET_BOOTLOADER_BOARD_NAME := sapphire
+#TARGET_BOOTLOADER_BOARD_NAME := sapphire
+TARGET_BOOTLOADER_BOARD_NAME := hero
 HAVE_CUSTOM_WIFI_DRIVER_2 := true
 
 # BOARD_USES_GENERIC_AUDIO := true
