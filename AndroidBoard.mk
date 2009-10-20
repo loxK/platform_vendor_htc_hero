@@ -63,7 +63,6 @@ PRODUCT_COPY_FILES += \
 	$(proprietary)/libOmxCore.so:system/lib/libOmxCore.so \
 	$(proprietary)/libhgl.so:system/lib/libhgl.so \
 	$(proprietary)/libhtc_acoustic.so:system/lib/libhtc_acoustic.so \
-	$(proprietary)/libjni_pinyinime.so:system/lib/libjni_pinyinime.so \
 	$(proprietary)/libmm-adspsvc.so:system/lib/libmm-adspsvc.so \
 	$(proprietary)/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
 	$(proprietary)/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
@@ -72,11 +71,13 @@ PRODUCT_COPY_FILES += \
 	$(proprietary)/libpvasf.so:system/lib/libpvasf.so \
 	$(proprietary)/libpvasfreg.so:system/lib/libpvasfreg.so \
 	$(proprietary)/libspeech.so:system/lib/libspeech.so \
-	$(proprietary)/sensors.sapphire.so:system/lib/hw/sensors.sapphire.so \
+	$(proprietary)/sensors.sapphire.so:system/lib/hw/sensors.hero.so \
 	$(proprietary)/copybit.msm7k.so:system/lib/hw/copybit.msm7k.so \
-	$(proprietary)/brf6300.bin:system/etc/firmware/brf6300.bin \
-	$(proprietary)/akmd:system/bin/akmd \
+	$(proprietary)/TIInit_5.3.53.bts:system/etc/firmware/TIInit_5.3.53.bts \
+	$(proprietary)/akmd8973:system/bin/akmd8973 \
 	$(proprietary)/AudioFilter.csv:system/etc/AudioFilter.csv
+
+	#$(proprietary)/libjni_pinyinime.so:system/lib/libjni_pinyinime.so \
 
 PRODUCT_COPY_FILES += \
 	$(proprietary)/AudioPara4.csv:system/etc/AudioPara4.csv \
