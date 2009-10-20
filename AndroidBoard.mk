@@ -38,6 +38,9 @@ include $(BUILD_KEY_CHAR_MAP)
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/init.sapphire.rc:root/init.sapphire.rc
 
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/init.hero.rc:root/init.hero.rc
+
 # prebuilt wifi driver
 #
 PRODUCT_COPY_FILES += \
@@ -71,7 +74,7 @@ PRODUCT_COPY_FILES += \
 	$(proprietary)/libpvasf.so:system/lib/libpvasf.so \
 	$(proprietary)/libpvasfreg.so:system/lib/libpvasfreg.so \
 	$(proprietary)/libspeech.so:system/lib/libspeech.so \
-	$(proprietary)/sensors.sapphire.so:system/lib/hw/sensors.hero.so \
+	$(proprietary)/sensors.hero.so:system/lib/hw/sensors.hero.so \
 	$(proprietary)/copybit.msm7k.so:system/lib/hw/copybit.msm7k.so \
 	$(proprietary)/TIInit_5.3.53.bts:system/etc/firmware/TIInit_5.3.53.bts \
 	$(proprietary)/akmd8973:system/bin/akmd8973 \
