@@ -14,7 +14,7 @@ on boot
 
 # disable some daemons the emulator doesn't want
     stop dund
-    stop akmd
+    stop akm8973
 
     setprop ro.setupwizard.mode EMULATOR
 

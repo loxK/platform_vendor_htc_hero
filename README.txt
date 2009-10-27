@@ -1,6 +1,6 @@
 ---- setup requirements  ----
 
-The Hero uses HTC offsets for the kernel in the boot.img, and not the
+The Magic uses HTC offsets for the kernel in the boot.img, and not the
 usual Google offsets. To build functional boot.img files, you must have
 a couple changes from Donut to build a mkbootimg that supports the 
 "--base" argument. From your Android repository root, execute the following
@@ -22,7 +22,7 @@ following.
 Starting from the root of your source tree, check out the project:
 
 cd vendor/htc
-git clone git://github.com/loxK/platform_vendor_htc_hero.git hero
+git clone git://github.com/koush/platform_vendor_htc_magic-open.git magic-open
 
 ---- preferred setup using a .repo/local_manifest.xml ----
 
@@ -32,7 +32,7 @@ The file would need to contain atleast the following:
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="github" fetch="git://github.com/" />
-    <project path="vendor/htc/hero" name="loxK/platform_vendor_htc_hero" revision="refs/heads/master" remote="github" />
+    <project path="vendor/htc/magic-open" name="koush/platform_vendor_htc_magic-open" revision="refs/heads/master" remote="github" />
 </manifest>
 
 After that file is modified/created, simply run:
@@ -41,15 +41,15 @@ repo sync
 
 ---- build configuration ----
 
-You can configure to build for HTC Hero by setting
+You can configure to build for HTC Magicby setting
 your environment at the root of the source tree:
 
 . build/envsetup.sh
-lunch htc_hero-eng
+lunch htc_magic-eng
 
 ---- proprietary files ----
 
-The HTC Hero device includes a small number of proprietary binary 
+The HTC Magic device includes a small number of proprietary binary 
 files that are necessary for Android to work correctly on it.
 
 They can be obtained from your Dream device by running the
@@ -66,4 +66,4 @@ Run the following from the root of your Android directory.
 TARGET_NO_RADIOIMAGE=true make otapackage
 
 The resultant update.zip can then be found at:
-out/target/product/$TARGET_PRODUCT/htc_hero-ota-eng.loxK.zip
+out/target/product/$TARGET_PRODUCT/htc_magic-ota-eng.koush.zip

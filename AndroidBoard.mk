@@ -77,7 +77,7 @@ PRODUCT_COPY_FILES += \
 	$(proprietary)/sensors.hero.so:system/lib/hw/sensors.hero.so \
 	$(proprietary)/copybit.msm7k.so:system/lib/hw/copybit.msm7k.so \
 	$(proprietary)/TIInit_5.3.53.bts:system/etc/firmware/TIInit_5.3.53.bts \
-	$(proprietary)/akmd8973:system/bin/akmd8973 \
+	$(proprietary)/akm8973:system/bin/akm8973 \
 	$(proprietary)/AudioFilter.csv:system/etc/AudioFilter.csv
 
 	#$(proprietary)/libjni_pinyinime.so:system/lib/libjni_pinyinime.so \
